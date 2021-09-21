@@ -13,4 +13,9 @@ module.exports = {
   ],
   plugins: ['@typescript-eslint'],
   parser: '@typescript-eslint/parser',
+  settings: {
+    'import/resolver': {
+      typescript: {},
+    },
+  },
 }
