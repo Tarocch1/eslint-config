@@ -1,6 +1,6 @@
 {
   "name": "@tarocch1/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tarocch1's eslint config.",
   "license": "MIT",
   "author": "Tarocch1 <huiben.fang@gmail.com> (https://github.com/Tarocch1)",
