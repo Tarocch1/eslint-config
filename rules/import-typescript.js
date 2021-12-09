@@ -3,6 +3,7 @@ module.exports = {
   plugins: ['import'],
   settings: {
     'import/resolver': {
+      node: {},
       typescript: {},
     },
   },
