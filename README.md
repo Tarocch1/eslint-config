@@ -48,3 +48,39 @@ module.exports = {
   extends: ['@tarocch1/eslint-config/typescript'],
 }
 ```
+
+### For React (JavaScript)
+
+Basic javascript with react.
+
+#### Install
+
+```bash
+npm i -D eslint@^8.4.1 eslint-plugin-import@^2.25.3 prettier@^2.5.1 eslint-plugin-prettier@^4.0.0 eslint-config-prettier@^8.3.0 eslint-plugin-react@^7.27.1
+```
+
+#### .eslintrc.js
+
+```js
+module.exports = {
+  extends: ['@tarocch1/eslint-config/react'],
+}
+```
+
+### For React (TypeScript)
+
+Basic typescript with react.
+
+#### Install
+
+```bash
+npm i -D eslint@^8.4.1 @typescript-eslint/eslint-plugin@^5.6.0 @typescript-eslint/parser@^5.6.0 eslint-import-resolver-typescript@^2.5.0 eslint-plugin-import@^2.25.3 prettier@^2.5.1 eslint-plugin-prettier@^4.0.0 eslint-config-prettier@^8.3.0 eslint-plugin-react@^7.27.1
+```
+
+#### .eslintrc.js
+
+```js
+module.exports = {
+  extends: ['@tarocch1/eslint-config/react-typescript'],
+}
+```
