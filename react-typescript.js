@@ -2,5 +2,13 @@ module.exports = {
   env: {
     browser: true,
   },
-  extends: ['./typescript.js', './rules/react.js'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    './rules/import-typescript.js',
+    './rules/react.js',
+    './rules/prettier.js',
+  ],
+  plugins: ['@typescript-eslint'],
+  parser: '@typescript-eslint/parser',
 }

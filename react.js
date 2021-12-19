@@ -2,5 +2,10 @@ module.exports = {
   env: {
     browser: true,
   },
-  extends: ['./index.js', './rules/react.js'],
+  extends: [
+    'eslint:recommended',
+    './rules/import.js',
+    './rules/react.js',
+    './rules/prettier.js',
+  ],
 }

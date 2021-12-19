@@ -2,6 +2,17 @@ module.exports = {
   env: {
     browser: true,
   },
-  extends: ['./index.js', './rules/vue3.js'],
+  extends: [
+    'eslint:recommended',
+    './rules/import.js',
+    './rules/vue3.js',
+    './rules/prettier.js',
+  ],
   parser: 'vue-eslint-parser',
+  parserOptions: {
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
 }
