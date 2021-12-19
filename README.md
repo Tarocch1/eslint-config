@@ -84,3 +84,51 @@ module.exports = {
   extends: ['@tarocch1/eslint-config/react-typescript'],
 }
 ```
+
+### For Vue (JavaScript)
+
+Basic javascript with vue.
+
+#### Install
+
+```bash
+npm i -D eslint@^8.4.1 eslint-plugin-import@^2.25.3 prettier@^2.5.1 eslint-plugin-prettier@^4.0.0 eslint-config-prettier@^8.3.0 eslint-plugin-vue@^8.2.0
+```
+
+#### .eslintrc.js
+
+```js
+// vue2
+module.exports = {
+  extends: ['@tarocch1/eslint-config/vue'],
+}
+
+// vue3
+module.exports = {
+  extends: ['@tarocch1/eslint-config/vue3'],
+}
+```
+
+### For Vue (TypeScript)
+
+Basic typescript with vue.
+
+#### Install
+
+```bash
+npm i -D eslint@^8.4.1 @typescript-eslint/eslint-plugin@^5.6.0 @typescript-eslint/parser@^5.6.0 eslint-import-resolver-typescript@^2.5.0 eslint-plugin-import@^2.25.3 prettier@^2.5.1 eslint-plugin-prettier@^4.0.0 eslint-config-prettier@^8.3.0 eslint-plugin-vue@^8.2.0
+```
+
+#### .eslintrc.js
+
+```js
+// vue2
+module.exports = {
+  extends: ['@tarocch1/eslint-config/vue-typescript'],
+}
+
+// vue3
+module.exports = {
+  extends: ['@tarocch1/eslint-config/vue3-typescript'],
+}
+```

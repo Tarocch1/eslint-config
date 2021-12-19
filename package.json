@@ -1,6 +1,6 @@
 {
   "name": "@tarocch1/eslint-config",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Tarocch1's eslint config.",
   "license": "MIT",
   "author": "Tarocch1 <huiben.fang@gmail.com> (https://github.com/Tarocch1)",
@@ -20,7 +20,11 @@
     "index.js",
     "typescript.js",
     "react.js",
-    "react-typescript.js"
+    "react-typescript.js",
+    "vue.js",
+    "vue-typescript.js",
+    "vue3.js",
+    "vue3-typescript.js"
   ],
   "husky": {
     "hooks": {
@@ -33,18 +37,6 @@
       "git add"
     ]
   },
-  "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.6.0",
-    "@typescript-eslint/parser": "^5.6.0",
-    "eslint": "^8.4.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-import-resolver-typescript": "^2.5.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.27.1",
-    "prettier": "^2.5.1",
-    "typescript": "^4.5.2"
-  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.6.0",
     "@typescript-eslint/parser": "^5.6.0",
@@ -54,6 +46,7 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-vue": "^8.2.0",
     "husky": "^4.3.8",
     "lint-staged": "^11.1.2",
     "prettier": "^2.5.1",
