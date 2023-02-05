@@ -17,14 +17,6 @@ npm install -D @tarocch1/eslint-config
 
 Basic javascript without typescript, react and vue.
 
-#### Install
-
-```bash
-npm i -D eslint@^8.4.1 eslint-plugin-import@^2.25.3 prettier@^2.5.1 eslint-plugin-prettier@^4.0.0 eslint-config-prettier@^8.3.0
-```
-
-#### .eslintrc.js
-
 ```js
 module.exports = {
   extends: ['@tarocch1/eslint-config'],
@@ -34,14 +26,6 @@ module.exports = {
 ### For typescript
 
 Basic typescript without react and vue.
-
-#### Install
-
-```bash
-npm i -D eslint@^8.4.1 @typescript-eslint/eslint-plugin@^5.6.0 @typescript-eslint/parser@^5.6.0 eslint-import-resolver-typescript@^2.5.0 eslint-plugin-import@^2.25.3 prettier@^2.5.1 eslint-plugin-prettier@^4.0.0 eslint-config-prettier@^8.3.0
-```
-
-#### .eslintrc.js
 
 ```js
 module.exports = {
@@ -53,14 +37,6 @@ module.exports = {
 
 Basic javascript with react.
 
-#### Install
-
-```bash
-npm i -D eslint@^8.4.1 eslint-plugin-import@^2.25.3 prettier@^2.5.1 eslint-plugin-prettier@^4.0.0 eslint-config-prettier@^8.3.0 eslint-plugin-react@^7.27.1
-```
-
-#### .eslintrc.js
-
 ```js
 module.exports = {
   extends: ['@tarocch1/eslint-config/react'],
@@ -71,14 +47,6 @@ module.exports = {
 
 Basic typescript with react.
 
-#### Install
-
-```bash
-npm i -D eslint@^8.4.1 @typescript-eslint/eslint-plugin@^5.6.0 @typescript-eslint/parser@^5.6.0 eslint-import-resolver-typescript@^2.5.0 eslint-plugin-import@^2.25.3 prettier@^2.5.1 eslint-plugin-prettier@^4.0.0 eslint-config-prettier@^8.3.0 eslint-plugin-react@^7.27.1
-```
-
-#### .eslintrc.js
-
 ```js
 module.exports = {
   extends: ['@tarocch1/eslint-config/react-typescript'],
@@ -88,14 +56,6 @@ module.exports = {
 ### For Vue (JavaScript)
 
 Basic javascript with vue.
-
-#### Install
-
-```bash
-npm i -D eslint@^8.4.1 eslint-plugin-import@^2.25.3 prettier@^2.5.1 eslint-plugin-prettier@^4.0.0 eslint-config-prettier@^8.3.0 eslint-plugin-vue@^8.2.0
-```
-
-#### .eslintrc.js
 
 ```js
 // vue2
@@ -112,14 +72,6 @@ module.exports = {
 ### For Vue (TypeScript)
 
 Basic typescript with vue.
-
-#### Install
-
-```bash
-npm i -D eslint@^8.4.1 @typescript-eslint/eslint-plugin@^5.6.0 @typescript-eslint/parser@^5.6.0 eslint-import-resolver-typescript@^2.5.0 eslint-plugin-import@^2.25.3 prettier@^2.5.1 eslint-plugin-prettier@^4.0.0 eslint-config-prettier@^8.3.0 eslint-plugin-vue@^8.2.0
-```
-
-#### .eslintrc.js
 
 ```js
 // vue2
