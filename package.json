@@ -1,6 +1,6 @@
 {
   "name": "@tarocch1/eslint-config",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "description": "Tarocch1's eslint config.",
   "license": "MIT",
   "author": "Tarocch1 <huiben.fang@gmail.com> (https://github.com/Tarocch1)",
@@ -13,8 +13,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix './**/*.js'",
-    "lint-staged": "lint-staged",
-    "postinstall": "husky install"
+    "lint-staged": "lint-staged"
   },
   "files": [
     "rules",
