@@ -14,7 +14,7 @@
   "scripts": {
     "lint": "eslint --fix './**/*.js'",
     "lint-staged": "lint-staged",
-    "prepare": "husky install"
+    "postinstall": "husky install"
   },
   "files": [
     "rules",
