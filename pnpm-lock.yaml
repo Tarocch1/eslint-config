@@ -29,6 +29,9 @@ importers:
       husky:
         specifier: ^9.1.7
         version: 9.1.7
+      jiti:
+        specifier: ^2.4.2
+        version: 2.4.2
       lint-staged:
         specifier: ^16.1.2
         version: 16.1.2
@@ -210,11 +213,13 @@ packages:
     resolution: {integrity: sha512-h3hzQuP+5l47wxn9+A39n1Q3i4mAvbNFJCZ8EZLrkqfsecfeZ5btIbDJTVAIQTy+uPr7uluAHIf11Jw+YkWjOQ==}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@rolldown/binding-linux-arm64-musl@1.0.0-beta.28':
     resolution: {integrity: sha512-oW5LydGtfdT8TI5HTybxi1DdMCXCmVE1ak4VrSmVKsbBZyE0bDgL1UvTS1OOvuq4PM24zQHIuSNOpgLXgVj4vQ==}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@rolldown/binding-linux-arm64-ohos@1.0.0-beta.28':
     resolution: {integrity: sha512-yeAAPMgssEkTCouUSYLrSWm+EXYBFI+ZTe8BVQkY5le51OCbqFNibtYkKZNHZBdhNRjWcSKSIuXN4MAXBz1j+g==}
@@ -225,11 +230,13 @@ packages:
     resolution: {integrity: sha512-xWsylmva9L4ZFc28A9VGlF9fnrFpVxVC+kKqrBoqz2l/p5b4zRoFNtnSecivnxuPeR5Ga6W6lnpwGeWDvqBZ1Q==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@rolldown/binding-linux-x64-musl@1.0.0-beta.28':
     resolution: {integrity: sha512-IdtRNm70EH7/1mjqXJc4pa2MoAxo/xl9hN8VySG9BQuYfhQz+JDC+FZBc+krlVUO3cTJz/o4xI/x4kA+rLKTwA==}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@rolldown/binding-wasm32-wasi@1.0.0-beta.28':
     resolution: {integrity: sha512-jS2G0+GtUCVcglCefScxgXeLJal0UAvVwvpy3reoC07K16k8WM/lXoYsZdpw34d5ONg0XcZpcokzA9R5K2o0lQ==}
