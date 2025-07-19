@@ -1,6 +1,6 @@
 {
   "name": "@tarocch1/eslint-config",
-  "version": "2.5.1",
+  "version": "3.0.2",
   "description": "Tarocch1's eslint config.",
   "license": "MIT",
   "author": "Tarocch1 <huiben.fang@gmail.com> (https://github.com/Tarocch1)",
@@ -10,53 +10,54 @@
     "url": "https://github.com/Tarocch1/eslint-config.git"
   },
   "bugs": "https://github.com/Tarocch1/eslint-config/issues",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint --fix './**/*.js'",
-    "lint-staged": "lint-staged"
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
   },
   "files": [
-    "rules",
-    ".prettierrc.js",
-    "index.js",
-    "typescript.js",
-    "react.js",
-    "react-typescript.js",
-    "vue.js",
-    "vue-typescript.js",
-    "vue3.js",
-    "vue3-typescript.js"
+    "dist",
+    "src"
   ],
+  "scripts": {
+    "prepack": "pnpm run build",
+    "build": "tsdown",
+    "lint": "eslint --fix --max-warnings 0",
+    "lint-staged": "lint-staged",
+    "prepare": "husky"
+  },
   "lint-staged": {
-    "./**/*.js": [
+    "./**/*.{js,ts}": [
       "eslint --fix --max-warnings=0"
     ]
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.50.0",
-    "@typescript-eslint/parser": "^5.50.0",
-    "eslint": "^8.33.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-import-resolver-typescript": "^3.5.3",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-vue": "^9.9.0",
-    "prettier": "^2.8.3"
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^10.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-vue": "^10.0.0",
+    "globals": "^16.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.0.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.50.0",
-    "@typescript-eslint/parser": "^5.50.0",
-    "eslint": "^8.33.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-import-resolver-typescript": "^3.5.3",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-vue": "^9.9.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.8.3",
-    "typescript": "^4.9.5"
+    "@eslint/js": "^9.31.0",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.3",
+    "eslint-plugin-vue": "^10.3.0",
+    "globals": "^16.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "lodash-es": "^4.17.21",
+    "prettier": "^3.6.2",
+    "tsdown": "^0.12.9",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.37.0"
   }
 }
