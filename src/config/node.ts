@@ -1,13 +1,12 @@
 import globals from 'globals'
-import eslint from '@eslint/js'
-import tseslint, {
-  type InfiniteDepthConfigWithExtends,
-} from 'typescript-eslint'
+import { type InfiniteDepthConfigWithExtends } from 'typescript-eslint'
+
+import { CommonConfig } from './common'
 
 /**
  * Node 配置
  */
 export const NodeConfig: InfiniteDepthConfigWithExtends[] = [
-  ...[eslint.configs.recommended, ...tseslint.configs.recommended],
+  ...CommonConfig,
   { languageOptions: { globals: globals.node } },
 ]

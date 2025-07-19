@@ -1,19 +1,17 @@
 import globals from 'globals'
-import eslint from '@eslint/js'
 import pluginVue from 'eslint-plugin-vue'
 import tseslint, {
   type InfiniteDepthConfigWithExtends,
 } from 'typescript-eslint'
 
+import { CommonConfig } from './common'
+
 /**
  * Vue 配置
  */
 export const VueConfig: InfiniteDepthConfigWithExtends[] = [
-  ...[
-    eslint.configs.recommended,
-    ...tseslint.configs.recommended,
-    ...pluginVue.configs['flat/recommended'],
-  ],
+  ...CommonConfig,
+  ...pluginVue.configs['flat/recommended'],
   {
     languageOptions: {
       globals: globals.browser,
