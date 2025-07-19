@@ -13,74 +13,48 @@ npm install -D @tarocch1/eslint-config
 
 ## Usage
 
-### For javascript
+### For Typescript
 
-Basic javascript without typescript, react and vue.
+```ts
+import { config, CommonConfig } from '@tarocch1/eslint-config'
 
-```js
-module.exports = {
-  extends: ['@tarocch1/eslint-config'],
-}
+export default config({ files: ['**/*.{js,ts}'], extends: CommonConfig })
 ```
 
-### For typescript
+### For Node
 
-Basic typescript without react and vue.
+```ts
+import { config, NodeConfig } from '@tarocch1/eslint-config'
 
-```js
-module.exports = {
-  extends: ['@tarocch1/eslint-config/typescript'],
-}
+export default config({ files: ['**/*.{js,ts}'], extends: NodeConfig })
 ```
 
-### For React (JavaScript)
+### For Vue
 
-Basic javascript with react.
+```ts
+import { config, VueConfig } from '@tarocch1/eslint-config'
 
-```js
-module.exports = {
-  extends: ['@tarocch1/eslint-config/react'],
-}
+export default config({
+  files: ['**/*.{js,jsx,ts,tsx,vue}'],
+  extends: VueConfig,
+})
 ```
 
-### For React (TypeScript)
+### Prettier
 
-Basic typescript with react.
+```ts
+// prettier.config.js
 
-```js
-module.exports = {
-  extends: ['@tarocch1/eslint-config/react-typescript'],
-}
+export { PrettierRules as default } from '@tarocch1/eslint-config'
 ```
 
-### For Vue (JavaScript)
+```ts
+// eslint.config.ts
 
-Basic javascript with vue.
+import { config, CommonConfig, PrettierConfig } from '@tarocch1/eslint-config'
 
-```js
-// vue2
-module.exports = {
-  extends: ['@tarocch1/eslint-config/vue'],
-}
-
-// vue3
-module.exports = {
-  extends: ['@tarocch1/eslint-config/vue3'],
-}
-```
-
-### For Vue (TypeScript)
-
-Basic typescript with vue.
-
-```js
-// vue2
-module.exports = {
-  extends: ['@tarocch1/eslint-config/vue-typescript'],
-}
-
-// vue3
-module.exports = {
-  extends: ['@tarocch1/eslint-config/vue3-typescript'],
-}
+export default config(
+  { files: ['**/*.{js,ts}'], extends: CommonConfig },
+  ...PrettierConfig,
+)
 ```
