@@ -26,6 +26,8 @@ export const VueConfig: InfiniteDepthConfigWithExtends[] = [
       'vue/multi-word-component-names': 'off',
       // 允许修改 props
       'vue/no-mutating-props': 'off',
+      // 允许使用 v-html
+      'vue/no-v-html': 'off',
     },
   },
 ]
