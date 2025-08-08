@@ -1,12 +1,19 @@
 import globals from 'globals'
 import { type InfiniteDepthConfigWithExtends } from 'typescript-eslint'
 
-import { CommonConfig } from './common'
+import { CommonConfig, type CommonConfigOptions } from './common'
+
+/**
+ * Node 配置选项
+ */
+export type NodeConfigOptions = CommonConfigOptions
 
 /**
  * Node 配置
  */
-export const NodeConfig: InfiniteDepthConfigWithExtends[] = [
-  ...CommonConfig,
+export const NodeConfig: (
+  options?: NodeConfigOptions,
+) => InfiniteDepthConfigWithExtends[] = (options) => [
+  ...CommonConfig(options),
   { languageOptions: { globals: globals.node } },
 ]

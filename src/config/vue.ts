@@ -1,22 +1,30 @@
-import globals from 'globals'
 import pluginVue from 'eslint-plugin-vue'
-import tseslint, {
+import globals from 'globals'
+import {
   type InfiniteDepthConfigWithExtends,
+  parser as tseslintParser,
 } from 'typescript-eslint'
 
-import { CommonConfig } from './common'
+import { CommonConfig, type CommonConfigOptions } from './common'
+
+/**
+ * Vue 配置选项
+ */
+export type VueConfigOptions = CommonConfigOptions
 
 /**
  * Vue 配置
  */
-export const VueConfig: InfiniteDepthConfigWithExtends[] = [
-  ...CommonConfig,
+export const VueConfig: (
+  options?: VueConfigOptions,
+) => InfiniteDepthConfigWithExtends[] = (options) => [
+  ...CommonConfig(options),
   ...pluginVue.configs['flat/recommended'],
   {
     languageOptions: {
       globals: globals.browser,
       parserOptions: {
-        parser: tseslint.parser,
+        parser: tseslintParser,
         ecmaFeatures: { jsx: true },
         extraFileExtensions: ['.vue'],
       },
