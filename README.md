@@ -18,7 +18,7 @@ npm install -D @tarocch1/eslint-config
 ```ts
 import { config, CommonConfig } from '@tarocch1/eslint-config'
 
-export default config({ files: ['**/*.{js,ts}'], extends: CommonConfig })
+export default config({ files: ['**/*.{js,ts}'], extends: CommonConfig() })
 ```
 
 ### For Node
@@ -26,7 +26,7 @@ export default config({ files: ['**/*.{js,ts}'], extends: CommonConfig })
 ```ts
 import { config, NodeConfig } from '@tarocch1/eslint-config'
 
-export default config({ files: ['**/*.{js,ts}'], extends: NodeConfig })
+export default config({ files: ['**/*.{js,ts}'], extends: NodeConfig() })
 ```
 
 ### For Vue
@@ -36,7 +36,7 @@ import { config, VueConfig } from '@tarocch1/eslint-config'
 
 export default config({
   files: ['**/*.{js,jsx,ts,tsx,vue}'],
-  extends: VueConfig,
+  extends: VueConfig(),
 })
 ```
 
@@ -54,7 +54,7 @@ export { PrettierOptions as default } from '@tarocch1/eslint-config/prettier'
 import { config, CommonConfig, PrettierConfig } from '@tarocch1/eslint-config'
 
 export default config(
-  { files: ['**/*.{js,ts}'], extends: CommonConfig },
-  ...PrettierConfig,
+  { files: ['**/*.{js,ts}'], extends: CommonConfig() },
+  ...PrettierConfig(),
 )
 ```
