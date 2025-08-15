@@ -29,6 +29,9 @@ function vueOptions(option: Options['vue']): Options['vue'] {
       'vue/block-order': ['error', {
         order: ['template', 'script', 'style'],
       }],
+      'vue/no-mutating-props': ['error', {
+        shallowOnly: true,
+      }],
       ...overrides,
     },
   }
