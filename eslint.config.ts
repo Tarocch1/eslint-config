@@ -1,8 +1,5 @@
-import { config, NodeConfig, PrettierConfig } from './src/index'
+import antfu from '@antfu/eslint-config'
 
-export default config(
-  { files: ['**/*.{js,ts}'] },
-  { ignores: ['dist'] },
-  { files: ['**/*.{js,ts}'], extends: NodeConfig() },
-  ...PrettierConfig(),
-)
+import { option } from './src'
+
+export default antfu(option())

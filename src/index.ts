@@ -1,1 +1,2 @@
-export * from './config'
+export * from './option'
+export * from './prettier'

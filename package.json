@@ -1,24 +1,24 @@
 {
   "name": "@tarocch1/eslint-config",
-  "version": "3.2.0",
+  "type": "module",
+  "version": "4.0.0",
   "description": "Tarocch1's eslint config.",
-  "license": "MIT",
   "author": "Tarocch1 <huiben.fang@gmail.com> (https://github.com/Tarocch1)",
+  "license": "MIT",
   "homepage": "https://github.com/Tarocch1/eslint-config#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/Tarocch1/eslint-config.git"
   },
   "bugs": "https://github.com/Tarocch1/eslint-config/issues",
-  "type": "module",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js",
     "./prettier": "./dist/prettier.js",
     "./package.json": "./package.json"
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist",
     "src"
@@ -26,45 +26,26 @@
   "scripts": {
     "prepack": "pnpm run build",
     "build": "tsdown",
-    "lint": "eslint --fix --max-warnings 0",
+    "lint": "eslint --fix",
     "lint-staged": "lint-staged",
     "prepare": "husky"
   },
-  "lint-staged": {
-    "./**/*.{js,ts}": [
-      "eslint --fix --max-warnings=0"
-    ]
-  },
   "peerDependencies": {
-    "@eslint/js": "^9.0.0",
-    "eslint": "^9.0.0",
-    "eslint-config-prettier": "^10.0.0",
-    "eslint-import-resolver-typescript": "^4.0.0",
-    "eslint-plugin-import-x": "^4.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-vue": "^10.0.0",
-    "globals": "^16.0.0",
-    "jiti": "^2.0.0",
-    "prettier": "^3.0.0",
-    "typescript": "^5.0.0",
-    "typescript-eslint": "^8.0.0"
+    "@antfu/eslint-config": "5.x",
+    "eslint-plugin-format": "1.x",
+    "prettier": "3.x"
   },
   "devDependencies": {
-    "@eslint/js": "^9.32.0",
-    "eslint": "^9.32.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-import-resolver-typescript": "^4.4.4",
-    "eslint-plugin-import-x": "^4.16.1",
-    "eslint-plugin-prettier": "^5.5.4",
-    "eslint-plugin-vue": "^10.4.0",
-    "globals": "^16.3.0",
-    "husky": "^9.1.7",
-    "jiti": "^2.5.1",
-    "lint-staged": "^16.1.5",
-    "lodash-es": "^4.17.21",
-    "prettier": "^3.6.2",
-    "tsdown": "^0.14.0",
-    "typescript": "^5.9.2",
-    "typescript-eslint": "^8.39.0"
+    "@antfu/eslint-config": "catalog:",
+    "eslint": "catalog:",
+    "eslint-plugin-format": "catalog:",
+    "husky": "catalog:",
+    "lint-staged": "catalog:",
+    "prettier": "catalog:",
+    "tsdown": "catalog:",
+    "typescript": "catalog:"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
