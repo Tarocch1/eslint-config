@@ -1,0 +1,57 @@
+name: Inspector
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - id: checkout
+        name: Checkout
+        uses: actions/checkout@v5
+      - id: setup_pnpm
+        name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+      - id: setup_nodejs
+        name: Setup node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: pnpm
+      - id: install_dependencies
+        name: Install dependencies
+        run: pnpm install
+      - id: build
+        name: Build
+        run: pnpm run build:inspector
+      - id: deployment
+        name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .eslint-config-inspector
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

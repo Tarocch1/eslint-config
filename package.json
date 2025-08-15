@@ -26,6 +26,7 @@
   "scripts": {
     "prepack": "pnpm run build",
     "build": "tsdown",
+    "build:inspector": "config-inspector build --base eslint-config/",
     "lint": "eslint --fix",
     "lint-staged": "lint-staged",
     "prepare": "husky"
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:",
+    "@eslint/config-inspector": "catalog:",
     "eslint": "catalog:",
     "eslint-plugin-format": "catalog:",
     "husky": "catalog:",
