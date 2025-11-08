@@ -34,6 +34,7 @@
   "peerDependencies": {
     "@antfu/eslint-config": "5.x",
     "eslint-plugin-format": "1.x",
+    "jiti": "2.x",
     "prettier": "3.x"
   },
   "devDependencies": {
@@ -42,6 +43,7 @@
     "eslint": "catalog:",
     "eslint-plugin-format": "catalog:",
     "husky": "catalog:",
+    "jiti": "catalog:",
     "lint-staged": "catalog:",
     "prettier": "catalog:",
     "tsdown": "catalog:",
