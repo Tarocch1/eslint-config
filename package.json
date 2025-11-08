@@ -1,7 +1,7 @@
 {
   "name": "@tarocch1/eslint-config",
   "type": "module",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "description": "Tarocch1's eslint config.",
   "author": "Tarocch1 <huiben.fang@gmail.com> (https://github.com/Tarocch1)",
   "license": "MIT",
@@ -30,6 +30,22 @@
     "lint": "eslint --fix",
     "lint-staged": "lint-staged",
     "prepare": "husky"
+  },
+  "peerDependencies": {
+    "@antfu/eslint-config": "6.x",
+    "eslint": "9.x",
+    "prettier-plugin-lint-md": "1.x"
+  },
+  "peerDependenciesMeta": {
+    "@antfu/eslint-config": {
+      "optional": true
+    },
+    "eslint": {
+      "optional": true
+    },
+    "prettier-plugin-lint-md": {
+      "optional": true
+    }
   },
   "dependencies": {
     "@antfu/eslint-config": "catalog:",
