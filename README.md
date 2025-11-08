@@ -10,7 +10,7 @@ My options of [@antfu/eslint-config](https://github.com/antfu/eslint-config).
 ## Install
 
 ```bash
-npm install -D eslint @antfu/eslint-config @tarocch1/eslint-config eslint-plugin-format
+npm install -D @tarocch1/eslint-config
 ```
 
 ## Usage

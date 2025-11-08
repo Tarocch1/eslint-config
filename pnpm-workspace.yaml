@@ -7,7 +7,7 @@ catalog:
   jiti: ^2.6.1
   lint-staged: ^16.2.6
   prettier: ^3.6.2
-  prettier-plugin-lint-md: 'catalog:'
+  prettier-plugin-lint-md: ^1.0.1
   tsdown: ^0.16.1
   typescript: ^5.9.3
 

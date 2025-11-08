@@ -1,7 +1,7 @@
 {
   "name": "@tarocch1/eslint-config",
   "type": "module",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "description": "Tarocch1's eslint config.",
   "author": "Tarocch1 <huiben.fang@gmail.com> (https://github.com/Tarocch1)",
   "license": "MIT",
@@ -31,23 +31,18 @@
     "lint-staged": "lint-staged",
     "prepare": "husky"
   },
-  "peerDependencies": {
-    "@antfu/eslint-config": "5.x",
-    "eslint-plugin-format": "1.x",
-    "jiti": "2.x",
-    "prettier": "3.x",
-    "prettier-plugin-lint-md": "1.x"
-  },
-  "devDependencies": {
+  "dependencies": {
     "@antfu/eslint-config": "catalog:",
-    "@eslint/config-inspector": "catalog:",
     "eslint": "catalog:",
     "eslint-plugin-format": "catalog:",
-    "husky": "catalog:",
     "jiti": "catalog:",
-    "lint-staged": "catalog:",
     "prettier": "catalog:",
-    "prettier-plugin-lint-md": "catalog:",
+    "prettier-plugin-lint-md": "catalog:"
+  },
+  "devDependencies": {
+    "@eslint/config-inspector": "catalog:",
+    "husky": "catalog:",
+    "lint-staged": "catalog:",
     "tsdown": "catalog:",
     "typescript": "catalog:"
   },
