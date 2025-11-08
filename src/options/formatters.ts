@@ -21,6 +21,10 @@ export function formattersOptions(
     prettierOptions: {
       ...PrettierOptions,
       ...prettierOptions,
+      plugins: [...new Set([
+        'prettier-plugin-lint-md',
+        ...(prettierOptions?.plugins || []),
+      ])],
     },
     ...rest,
   }

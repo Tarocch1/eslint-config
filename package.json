@@ -35,7 +35,8 @@
     "@antfu/eslint-config": "5.x",
     "eslint-plugin-format": "1.x",
     "jiti": "2.x",
-    "prettier": "3.x"
+    "prettier": "3.x",
+    "prettier-plugin-lint-md": "1.x"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:",
@@ -46,6 +47,7 @@
     "jiti": "catalog:",
     "lint-staged": "catalog:",
     "prettier": "catalog:",
+    "prettier-plugin-lint-md": "catalog:",
     "tsdown": "catalog:",
     "typescript": "catalog:"
   },
