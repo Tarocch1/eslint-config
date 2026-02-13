@@ -6,7 +6,7 @@ import type { Options } from '.'
 export function rulesOptions(option: Options['rules']): Options['rules'] {
   return {
     'perfectionist/sort-imports': ['error', {
-      newlinesBetween: 'always',
+      newlinesBetween: 1,
     }],
     ...option,
   }
