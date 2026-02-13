@@ -30,5 +30,3 @@ jobs:
       - id: publish
         name: Publish
         run: pnpm publish --no-git-checks
-        env:
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
