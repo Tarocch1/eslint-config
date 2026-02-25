@@ -4,6 +4,8 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    assignees:
+      - Tarocch1
     groups:
       version-updates:
         applies-to: version-updates
@@ -22,3 +24,5 @@ updates:
     directory: /
     schedule:
       interval: daily
+    assignees:
+      - Tarocch1
