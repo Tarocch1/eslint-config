@@ -19,5 +19,5 @@ npm install -D @tarocch1/eslint-config @antfu/eslint-config eslint prettier-plug
 import antfu from '@antfu/eslint-config'
 import { option } from '@tarocch1/eslint-config'
 
-export default antfu(option())
+export default antfu(...option())
 ```
