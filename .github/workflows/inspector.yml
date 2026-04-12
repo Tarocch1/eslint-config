@@ -35,7 +35,7 @@ jobs:
           cache: pnpm
       - id: install_dependencies
         name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
       - id: build
         name: Build
         run: pnpm run build:inspector

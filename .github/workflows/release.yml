@@ -30,7 +30,7 @@ jobs:
           cache: pnpm
       - id: install_dependencies
         name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
       - id: publish
         name: Publish
         run: pnpm publish --no-git-checks
