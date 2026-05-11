@@ -11,5 +11,5 @@ catalog:
   lint-staged: ^16.4.0
   prettier: ^3.8.2
   prettier-plugin-lint-md: ^1.0.1
-  tsdown: ^0.21.7
+  tsdown: ^0.22.0
   typescript: ^6.0.2
