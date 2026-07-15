@@ -43,7 +43,7 @@ jobs:
         name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: .eslint-config-inspector
+          path: dist/__eslint-config-inspector
   deploy:
     name: Deploy
     runs-on: ubuntu-latest

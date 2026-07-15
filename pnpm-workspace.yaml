@@ -1,15 +1,17 @@
+allowBuilds:
+  esbuild: true
 catalogMode: strict
 shellEmulator: true
 trustPolicy: no-downgrade
 catalog:
-  '@antfu/eslint-config': ^8.1.1
-  '@eslint/config-inspector': ^1.5.0
-  eslint: ^10.2.0
+  '@antfu/eslint-config': ^9.1.0
+  '@eslint/config-inspector': ^3.0.4
+  eslint: ^10.6.0
   eslint-plugin-format: ^2.0.1
   husky: ^9.1.7
-  jiti: ^2.6.1
-  lint-staged: ^16.4.0
-  prettier: ^3.8.2
+  jiti: ^2.7.0
+  lint-staged: ^17.0.8
+  prettier: ^3.9.4
   prettier-plugin-lint-md: ^1.0.1
-  tsdown: ^0.22.0
-  typescript: ^6.0.2
+  tsdown: ^0.22.4
+  typescript: ^6.0.3
